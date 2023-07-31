@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Una empresa quiere agendar citas a sus clientes, requiere por llamda pedir información:
+    ID_mi_tabla
+    nombre (obligatorio)
+    apellido 
+    teléfono (obligatorio)
+    colonia (obligatorio)
+    dirección 
+    tipo_servicio (servicio1, servicio2, servicio3, servicioN)
+    lista,column,checkbox,input
+    correo
+    fecha de cita
+    fecha de hoy (obligatorio)
+    quién lo atendió(obligatorio)
+    Button submit
+    miinput.selectedID()
+ -->
+ <form >
+    <input type="text" name="id" placeholder="ID_tabla">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="text" name="last_name" placeholder="Apellido">
+    <input type="text" name="phone" placeholder="Teléfono" required>
+    <input type="text" name="colonia" placeholder="Colonia"required>
+    <input type="text" name="adress" placeholder="Dirección">
+    <select>
+        <option>Seleccionar servicio</option>
+        <option>servicio1</option>
+        <option>servicio2</option>
+        <option>servicio3</option>
+        <option>servicioN</option>
+    </select>
+    <input type="email" name="email" placeholder="Correo" >
+    <input type="date" name="date_appoinment" placeholder="Fecha de cita">
+    <input type="datetime-local" name="today_date" placeholder="Fecha de hoy" required>
+    <input type="text" name="employe_name" placeholder="Empleado que lo atendió" required>
+    <input type="submit" value="Guardar">
+ </form>
+</body>
+</html>
